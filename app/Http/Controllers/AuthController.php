@@ -23,7 +23,7 @@ class AuthController extends Controller
             $role = $request->query('role');
 
             if (!$token) {
-                return self::redirectToLogin();
+                return redirect('/guest/home');
             }
 
             $checkToken = $this->service->checkToken($token);

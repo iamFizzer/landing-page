@@ -2,9 +2,9 @@
     <div class="container">
         <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Blog</small>
-            <h1 class="display-5 mb-5">Be First Who Read News</h1>
+            <h1 class="display-5 mb-5">Acara</h1>
         </div>
-        <div class="row gx-4 justify-content-center">
+        {{-- <div class="row gx-4 justify-content-center">
             <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                 <div class="blog-item">
                     <div class="overflow-hidden rounded">
@@ -53,6 +53,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>

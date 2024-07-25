@@ -1,10 +1,9 @@
 <div class="container-fluid py-6">
     <div class="container">
         <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
-            <h1 class="display-5 mb-5">What Our Customers says!</h1>
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial Alumni</small>
         </div>
-        <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
+        {{-- <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
             <div class="testimonial-item rounded bg-light">
                 <div class="d-flex mb-3">
                     <img src="{{ asset('template') }}/img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
@@ -183,6 +182,6 @@
                     <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>

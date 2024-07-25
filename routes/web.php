@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
  * */
 Route::controller(AuthController::class)
     ->group(function () {
-        Route::get('/', 'checkToken')->name('check');
+        Route::get('/cek', 'checkToken')->name('check'); // keganti
         Route::get('/logout', 'logout')->name('logout'); // gunakan untuk logout
         Route::get('/roles', 'changeUserRole')->middleware('auth.token');
     });
@@ -23,9 +23,9 @@ Route::middleware('auth.token')
         Route::get('/home', [HomeController::class, 'home'])->name('home');
     });
 
-Route::get('/guest', function(){
-    return view('main');
-});
+Route::get('/', [HomeController::class, 'guest'])->name('home');
+
+
 
 /**
  * * Buat route-route baru di bawah ini
