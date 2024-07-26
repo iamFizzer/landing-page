@@ -20,10 +20,10 @@ class HomeController extends Controller
             return view('dashboard.admin.home', [
                 'title' => 'Home',
             ]);
+        }else
+        {
+            return view('main');
         }
     }
-    public function guest()
-    {
-        return view('main');
-    }
+
 }

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
  * */
 Route::controller(AuthController::class)
     ->group(function () {
-        Route::get('/cek', 'checkToken')->name('check'); // keganti
+        Route::get('/', 'checkToken')->name('check');
         Route::get('/logout', 'logout')->name('logout'); // gunakan untuk logout
         Route::get('/roles', 'changeUserRole')->middleware('auth.token');
     });
@@ -23,8 +23,7 @@ Route::middleware('auth.token')
         Route::get('/home', [HomeController::class, 'home'])->name('home');
     });
 
-Route::get('/', [HomeController::class, 'guest'])->name('home');
-
+Route::get('/guest/home', [HomeController::class, 'home'])->name('landing');
 
 
 /**
